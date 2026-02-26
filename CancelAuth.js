@@ -1,11 +1,11 @@
 const express = require("express");
-const OrderCancel = require("../OrderCancel");
+const OrderCancel = require("./OrderCancel");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
-const fetchUser = require("../fetchorders");
-const fetchOrders = require("../fetchorders");
+const fetchUser = require("./fetchorders");
+const fetchOrders = require("./fetchorders");
 const JWT_SECRET = "myname!sdev";
 
 // Route 1=> post user details for signup using: POST "/api/auth/signup". No login required

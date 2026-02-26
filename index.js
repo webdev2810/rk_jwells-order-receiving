@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 //Available Routes
 app.use('/api/auth', require('./auth'))
-app.use('/api/cancelauth', require('./routes/CancelAuth'))
+app.use('/api/cancelauth', require('./CancelAuth'))
 app.use('/api/reaturnauth', require('./ReaturnAuth'))
 
 app.listen(port, () => {
