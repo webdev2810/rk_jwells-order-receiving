@@ -14,9 +14,9 @@ app.get("/", (req, res) => {
   res.send("Now, Receiving Order Api is live")
 });
 //Available Routes
-app.use('/api/auth', require('./routes/auth'))
+app.use('/api/auth', require('./auth'))
 app.use('/api/cancelauth', require('./routes/CancelAuth'))
-app.use('/api/reaturnauth', require('./routes/ReaturnAuth'))
+app.use('/api/reaturnauth', require('./ReaturnAuth'))
 
 app.listen(port, () => {
   console.log(`Orders Data Receiving Backend listening on port ${port}`);
