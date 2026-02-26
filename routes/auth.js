@@ -1,11 +1,11 @@
 const express = require("express");
-const Order = require("../models/Order");
+const Order = require("../Order");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
-const fetchUser = require("../middleware/fetchorders");
-const fetchOrders = require("../middleware/fetchorders");
+const fetchUser = require("../fetchorders");
+const fetchOrders = require("../fetchorders");
 const JWT_SECRET = "myname!sdev";
 // const RecOrd = require("../models/RecOrder");
 const mongoose = require('mongoose');
